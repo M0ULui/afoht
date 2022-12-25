@@ -36,7 +36,7 @@ logo = """\033[33m
   ███    ███     ███    ███ ███    ███   ███ ▀███▄ ███  ███   ███   ███    ███          ███     ███    ███ ███    ███ ███▌    ▄ 
   ███    █▀      ███    █▀  ████████▀    ███   ▀█▀ █▀    ▀█   █▀    ████████▀          ▄████▀    ▀██████▀   ▀██████▀  █████▄▄██ 
                                          ▀                                                                            ▀                             
-                                    \033[34m[✔] https://github.com/Z4nzu/hackingtool   [✔]
+                                    \033[34m[✔]    https://github.com/M0ULui/afoht     [✔]
                                     \033[34m[✔]            Version 1.1.0               [✔]
                                     \033[91m[X] Please Don't Use For illegal Activity  [X]
 \033[97m """
@@ -74,7 +74,7 @@ class AllTools(HackingToolsCollection):
 if __name__ == "__main__":
     try:
         if system() == 'Linux':
-            fpath = "/home/hackingtoolpath.txt"
+            fpath = "/home/AFOHTpath.txt"
             if not os.path.exists(fpath):
                 os.system('clear')
                 # run.menu()
@@ -83,7 +83,7 @@ if __name__ == "__main__":
                         [1] Manual 
                         [2] Default
                 """)
-                choice = input("Z4nzu =>> ")
+                choice = input("AFOHT =>> ")
 
                 if choice == "1":
                     inpath = input("Enter Path (with Directory Name) >> ")
@@ -91,7 +91,7 @@ if __name__ == "__main__":
                         f.write(inpath)
                     print(f"Successfully Set Path to: {inpath}")
                 elif choice == "2":
-                    autopath = "/home/hackingtool/"
+                    autopath = "/home/afoht/"
                     with open(fpath, "w") as f:
                         f.write(autopath)
                     print(f"Your Default Path Is: {autopath}")

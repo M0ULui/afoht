@@ -61,7 +61,7 @@ if [ $choice == 1 ]; then
 	    fi
 
         echo "[✔] Installing ...\n";
-        https://github.com/M0ULui/afoht.git "$INSTALL_DIR";
+        sudo git clone https://github.com/M0ULui/afoht.git "$INSTALL_DIR";
         echo "#!/bin/bash
         python3 $INSTALL_DIR/afoht.py" '${1+"$@"}' > afoht;
         sudo chmod +x afoht;
