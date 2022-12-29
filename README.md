@@ -1,6 +1,8 @@
 # afoht
 AFOHT
-'''
+
+Pre-Install Commands:
+```
 git clone https://github.com/Z4nzu/hackingtool.git
 
 chmod -R 755 hackingtool  
@@ -12,4 +14,4 @@ sudo pip3 install -r requirement.txt
 bash install.sh
 
 sudo hackingtool
-'''
+```
