@@ -5,7 +5,7 @@
 
 Pre-Installation Commands:
 
-**(!! USE ROOT ACCOUNT/USER !!)**
+**!! USE ROOT ACCOUNT/USER !!**
 ```
 sudo git clone https://github.com/M0ULui/afoht.git
 
