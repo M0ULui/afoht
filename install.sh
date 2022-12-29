@@ -30,9 +30,9 @@ echo "| |_| | / _ \| |   | ' / | ||  \| | |  _     | || | | | | | | |    ";
 echo "|  _  |/ ___ \ |___| . \ | || |\  | |_| |    | || |_| | |_| | |___ ";
 echo "|_| |_/_/   \_\____|_|\_\___|_| \_|\____|    |_| \___/ \___/|_____|";
 
-echo -e "${BLUE}                                    https://github.com/Z4nzu/hackingtool ${NC}"
+echo -e "${BLUE}                                    https://github.com/M0ULui/afoht ${NC}"
 echo -e "${RED}                                     [!] This Tool Must Run As ROOT [!]${NC}\n"
-echo -e ${CYAN}                "Select Best Option : \n"
+echo -e ${CYAN}                "Available OS Options : \n"
 echo -e "${WHITE}              [1] Kali Linux"
 echo -e "${WHITE}              [0] Exit "
 echo -n -e "AFOHT >> "
@@ -40,10 +40,10 @@ read choice
 INSTALL_DIR="/usr/share/doc/afoht"
 BIN_DIR="/usr/bin/"
 if [ $choice == 1 ]; then
-	echo "[*] Checking Internet Connection .."
+	echo "[*] Ensuring Internet Connection is Fine.."
 	wget -q --tries=10 --timeout=20 --spider https://google.com
 	if [ $? == 0 ]; then
-        echo -e ${BLUE}"[✔] Loading ... "
+        echo -e ${BLUE}"[✔] Initializing ... "
         if [ $choice == 1 ]; then
             sudo apt-get update -y && apt-get upgrade -y
             sudo apt-get install python3-pip -y
@@ -51,7 +51,7 @@ if [ $choice == 1 ]; then
 
 	    echo "[✔] Checking directories..."
 	    if [ -d "$INSTALL_DIR" ]; then
-	        echo "[!] A Directory for All-For-One Hacking Tool Was Found.. Do You Want To Replace It ? [y/n]:" ;
+	        echo "[!] A Directory for All-For-One Hacking Tool Was Found. Do You Want To Replace It ? [y/n]:" ;
 	        read input
 	        if [ "$input" = "y" ]; then
 	            sudo rm -R "$INSTALL_DIR"
@@ -67,31 +67,31 @@ if [ $choice == 1 ]; then
         sudo chmod +x afoht;
         sudo cp afoht /usr/bin/ && rm afoht;
 
-        echo "\n[✔] Trying to install The Requirements ..."
+        echo "\n[+] Trying to install The Prerequisites ..."
         if [ $choice == 1 ]; then
             sudo pip3 install lolcat boxes flask requests
             sudo apt-get install -y figlet
         fi
 
 	else
-		  echo -e $RED "Please Check Your Internet Connection ..!!"
+		  echo -e $RED "!! Unable To Proceed, Internet Connection is Weak !!"
 	fi
 
     if [ -d "$INSTALL_DIR" ]; then
         echo "";
         echo "[✔] Successfuly Installed !!! \n\n";
-        echo -e $ORANGE "       [+]+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[+]"
-        echo            "       [+]                                                             [+]"
-        echo -e $ORANGE "       [+]     ✔✔✔ Now Just Type In Terminal (afoht) ✔✔✔         [+]"
-        echo            "       [+]                                                             [+]"
-        echo -e $ORANGE "       [+]+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[+]"
+        echo -e $ORANGE "       [✔]+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[✔]"
+        echo            "       [✔]                                                             [✔]"
+        echo -e $ORANGE "       [✔]    ✔✔✔ Proceed by Typing (afoht) in the Terminal ✔✔✔     [✔]"
+        echo            "       [✔]                                                             [✔]"
+        echo -e $ORANGE "       [✔]+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[✔]"
     else
-        echo "[✘] Installation Failed !!! [✘]";
+        echo "[✘] Installation Failed, Please Try Again. [✘]";
         exit
     fi
 
 elif [ $choice == 0] && [ $choice != 1 ] ; then
-    echo -e $RED "[✘] THank Y0u !! [✘] "
+    echo -e $RED "[+] Thank You! [+] "
     exit
 else
     echo -e $RED "[!] Please Select A Valid Option [!]"

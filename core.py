@@ -60,7 +60,7 @@ class HackingTool(object):
         if self.PROJECT_URL:
             desc += '\n\t[*] '
             desc += self.PROJECT_URL
-        os.system(f'echo "{desc}"|boxes -d boy | lolcat')
+        os.system(f'echo "{desc}"|boxes -d parchment | lolcat')
 
     def show_options(self, parent = None):
         clear_screen()
@@ -84,11 +84,11 @@ class HackingTool(object):
                     sys.exit()
                 return 99
         except (TypeError, ValueError):
-            print("Please enter a valid option")
-            input("\n\nPress ENTER to continue:")
+            print("Please Enter A Valid Option!")
+            input("\n\n-- Press ENTER to Continue --")
         except Exception:
             print_exc()
-            input("\n\nPress ENTER to continue:")
+            input("\n\n-- Press ENTER to Continue --")
         return self.show_options(parent = parent)
 
     def before_install(self):
@@ -149,7 +149,7 @@ class HackingToolsCollection(object):
 
     def show_info(self):
         os.system("figlet -f standard -c {} | lolcat".format(self.TITLE))
-        # os.system(f'echo "{self.DESCRIPTION}"|boxes -d boy | lolcat')
+        # os.system(f'echo "{self.DESCRIPTION}"|boxes -d parchment | lolcat')
         # print(self.DESCRIPTION)
 
     def show_options(self, parent = None):
