@@ -1,7 +1,10 @@
 # afoht
-AFOHT
+**All-For-One Hacking Tool (AFOHT)**
 
-Pre-Install Commands (!! USE ROOT ACCOUNT/USER !!):
+**ONLY USE IT FOR ETHICAL PURPOSES!**
+
+Pre-Installation Commands:
+**(!! USE ROOT ACCOUNT/USER !!)**
 ```
 sudo git clone https://github.com/M0ULui/afoht.git
 
