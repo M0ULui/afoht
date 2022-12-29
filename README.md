@@ -1,9 +1,9 @@
 # afoht
 AFOHT
 
-Pre-Install Commands:
+Pre-Install Commands (!! USE ROOT ACCOUNT/USER !!):
 ```
-git clone https://github.com/M0ULui/afoht.git
+sudo git clone https://github.com/M0ULui/afoht.git
 
 chmod -R 755 afoht 
 
