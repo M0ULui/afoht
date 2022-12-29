@@ -4,6 +4,7 @@
 **ONLY USE IT FOR ETHICAL PURPOSES!**
 
 **(!! USE ROOT ACCOUNT/USER !!)**
+
 Pre-Installation Commands:
 ```
 sudo git clone https://github.com/M0ULui/afoht.git
