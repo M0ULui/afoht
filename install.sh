@@ -69,8 +69,9 @@ if [ $choice == 1 ]; then
 
         echo "\n[+] Trying to install The Prerequisites ..."
         if [ $choice == 1 ]; then
-            sudo pip3 install lolcat boxes flask requests
+            sudo pip3 install lolcat flask requests
             sudo apt-get install -y figlet
+            apt-get install -y boxes
         fi
 
 	else
