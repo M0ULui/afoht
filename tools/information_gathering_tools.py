@@ -9,7 +9,7 @@ from core import HackingToolsCollection
 from core import clear_screen
 
 
-class NMAP(HackingTool):
+class Nmap(HackingTool):
     TITLE = "Network Map (nmap)"
     DESCRIPTION = "Free and open source utility for network discovery and security auditing"
     INSTALL_COMMANDS = [
@@ -19,7 +19,7 @@ class NMAP(HackingTool):
     PROJECT_URL = "https://github.com/nmap/nmap"
 
     def __init__(self):
-        super(NMAP, self).__init__(runnable = False)
+        super(Nmap, self).__init__(runnable = False)
 
 
 
@@ -85,7 +85,7 @@ class PortScannerRanger(HackingTool):
 class InformationGatheringTools(HackingToolsCollection):
     TITLE = "Information gathering tools"
     TOOLS = [
-        NMAP(),
+        Nmap(),
         PortScan(),
         XeroSploit(),
         ReconSpider(),

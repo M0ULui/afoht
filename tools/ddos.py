@@ -26,7 +26,7 @@ class MHDDoS(HackingTool):
         timer = input(" Enter Timer >> ")
         os.system("cd MHDDoS;")
         subprocess.run([
-            "sudo", "python3 MHDDoS", method, url, "socks_type5.4.1", threads, proxylist, multiple, timer])
+            "sudo", "python3 start.py", method, url, "socks_type5.4.1", threads, proxylist, multiple, timer])
 
 
 class SlowLoris(HackingTool):
