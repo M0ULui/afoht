@@ -6,33 +6,33 @@ from core import HackingTool
 from core import HackingToolsCollection
 
 class MHDDoS(HackingTool):
-    TITLE ="MHDDOs"
-    DESCRIPTION = "DDoS Attack Script With 56 Methods." \
-                  "DDoS attacks\n\b " \
+    TITLE ="MHDDoS"
+    DESCRIPTION = "DDoS Attack Scripts with 56 Methods." \
+                  "\n\b DDoS attacks" \
                   "for SECURITY TESTING PURPOSES ONLY! "
     
     INSTALL_COMMANDS = [
         "git clone https://github.com/MatrixTM/MHDDoS.git",
-        "cd MHDDoS;sudo pip3 install -r requirements.txt"
+        "cd MHDDoS;sudo pip install -r requirements.txt"
     ]
     PROJECT_URL = "https://github.com/MatrixTM/MHDDoS.git"
 
     def run(self):
-        method = input("Enter Method >> ")
-        url = input("Enter URL >> ")
-        threads = input("Enter Threads >> ")
-        proxylist = input(" Enter ProxyList >> ")
-        multiple = input(" Enter Multiple >> ")
-        timer = input(" Enter Timer >> ")
-        os.system("cd MHDDoS;")
-        subprocess.run([
-            "sudo", "python3 start.py", method, url, "socks_type5.4.1", threads, proxylist, multiple, timer])
+        #method = input("Enter Method >> ")
+        #url = input("Enter URL >> ")
+        #threads = input("Enter Threads >> ")
+        #proxylist = input(" Enter ProxyList >> ")
+        #multiple = input(" Enter Multiple >> ")
+        #timer = input(" Enter Timer >> ")
+        os.system("cd MHDDoS; python3 start.py")
+        subinput = input("MHDDoS => ")
+        subprocess.run([subinput])
 
 
 class SlowLoris(HackingTool):
     TITLE = "SlowLoris"
     DESCRIPTION = "Slowloris is basically an HTTP Denial of Service attack." \
-                  "It send lots of HTTP Request"
+                  "It floods targeted sites with HTTP Requests"
     INSTALL_COMMANDS = ["sudo pip3 install slowloris"]
 
     def run(self):

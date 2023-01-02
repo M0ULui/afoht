@@ -19,7 +19,7 @@ class Sqlmap(HackingTool):
 class NoSqlMap(HackingTool):
     TITLE = "NoSqlMap"
     DESCRIPTION = "NoSQLMap is an open source Python tool designed to \n " \
-                  "audit for as well as automate injection attacks and exploit.\n " \
+                  "audit as well as automating injection based attacks and exploits.\n " \
                   "\033[91m " \
                   "[*] Please Install MongoDB \n "
     INSTALL_COMMANDS = [

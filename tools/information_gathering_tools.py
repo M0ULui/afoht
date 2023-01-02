@@ -16,11 +16,19 @@ class Nmap(HackingTool):
         "sudo git clone https://github.com/nmap/nmap.git",
         "sudo chmod -R 755 nmap && cd nmap && sudo ./configure && make && sudo make install"
     ]
+    RUN_COMMANDS = ["nmap -h"]
     PROJECT_URL = "https://github.com/nmap/nmap"
 
-    def __init__(self):
-        super(Nmap, self).__init__(runnable = False)
+#    def __init__(self):
+ #       super(Nmap, self).__init__(runnable = False)
 
+class DNSRecon(HackingTool):
+    TITLE = "DNSRecon"
+    DESCRIPTION = "DNSRecon is a Python script that provides the ability to perform \n" \
+                    "Multiple Enumeration and lookup tasks"
+    INSTALL_COMMANDS = ["sudo apt install dnsrecon"]
+    RUN_COMMANDS = ["sudo dnsrecon -h"]
+    PROJECT_URL = "https://www.kali.org/tools/dnsrecon/"
 
 
 class PortScan(HackingTool):
