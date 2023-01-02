@@ -20,7 +20,7 @@ class JohnTheRipper(HackingTool):
         os.system("cd /; sudo john")
         subinput = input("John >> ")
         for x in subinput:
-            if x == "99":
+            if x != "99":
                 os.system(subinput)
             else:
                 pass
