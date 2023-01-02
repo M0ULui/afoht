@@ -32,6 +32,7 @@ class HackingTool(object):
 
     INSTALL_COMMANDS: List[str] = []
     INSTALLATION_DIR: str = ""
+    INSTALLED_SIZE: str = ""
 
     UNINSTALL_COMMANDS: List[str] = []
 
@@ -42,7 +43,7 @@ class HackingTool(object):
     PROJECT_URL: str = ""
 
     def __init__(self, options = None, installable: bool = True,
-                 runnable: bool = True):
+                 runnable: bool = True, size: bool = TRUE):
         options = options or []
         if isinstance(options, list):
             self.OPTIONS = []
@@ -50,6 +51,8 @@ class HackingTool(object):
                 self.OPTIONS.append(('Install', self.install))
             if runnable:
                 self.OPTIONS.append(('Run', self.run))
+            if size:
+                self.OPTIONS.append(("Size of the tool", print(self.INSTALLED_SIZE)))
             self.OPTIONS.extend(options)
         else:
             raise Exception(
@@ -92,6 +95,9 @@ class HackingTool(object):
         return self.show_options(parent = parent)
 
     def before_install(self):
+        print("The size of this tools is: " + self.INSTALLED_SIZE)
+        print_exc()
+        input("\n\n-- Press ENTER to INSTALL --")
         pass
 
     def install(self):
@@ -129,7 +135,7 @@ class HackingTool(object):
             self.after_run()
 
     def after_run(self):
-        pass
+            pass
 
     def is_installed(self, dir_to_check = None):
         print("Unimplemented: DO NOT USE")
@@ -139,7 +145,7 @@ class HackingTool(object):
         webbrowser.open_new_tab(self.PROJECT_URL)
 
 
-class HackingToolsCollection(object):
+class HackingToolsCollection(object):  
     TITLE: str = ""  # used to show info in the menu
     DESCRIPTION: str = ""
     TOOLS = []  # type: List[Any[HackingTool, HackingToolsCollection]]

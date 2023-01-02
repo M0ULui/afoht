@@ -16,6 +16,7 @@ from tools.reverse_engineering import ReverseEngineeringTools
 from tools.sql_tools import SqlInjectionTools
 from tools.webattack import WebAttackTools
 from tools.wordlist_generator import WordlistGeneratorTools
+from tools.management import *
 
 logo = """\033[33m
     _    _     _          _____ ___  ____        ___  _   _ _____ 
@@ -42,7 +43,8 @@ all_tools = [
     ForensicTools(),
     PayloadCreatorTools(),
     ReverseEngineeringTools(),
-    DDOSTools()
+    DDOSTools(),
+    Management()
 ]
 
 
