@@ -19,11 +19,7 @@ class JohnTheRipper(HackingTool):
         print("Input <99> to STOP")
         os.system("cd /; sudo john")
         subinput = input("John >> ")
-        for x in subinput:
-            if x == "99":
-                subprocess.run([subinput])
-            else:
-                pass
+        subprocess.run([subinput])
 
 class Hydra(HackingTool):
     TITLE = "Hydra"
@@ -36,11 +32,8 @@ class Hydra(HackingTool):
     def run(self):
         os.system("cd /; sudo hydra; sudo hydra -h")
         subinput = input("Hydra >> ")
-        for x in subinput:
-            if x != "99":
-                subprocess.run([subinput])
-            else:
-                pass
+        subprocess.run([subinput])
+
 
 
 
