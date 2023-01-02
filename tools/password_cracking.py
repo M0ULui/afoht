@@ -17,9 +17,14 @@ class JohnTheRipper(HackingTool):
     PROJECT_URL = "https://www.kali.org/tools/john/"
 
     def run(self):
+        print("Input <99> to STOP")
         os.system("cd /")
         subinput = input("John >> ")
-        subprocess.run([subinput])
+        for x in subinput:
+            if x == "99":
+                pass
+            else:
+                subprocess.run([subinput])
 
 class Hydra(HackingTool):
     TITLE = "Hydra"
@@ -33,7 +38,14 @@ class Hydra(HackingTool):
     def run(self):
         os.system("cd /")
         subinput = input("Hydra >> ")
-        subprocess.run([subinput])
+        for x in subinput:
+            if x == "99":
+                pass
+            else:
+                subprocess.run([subinput])
+
+
+
 
 
 class PasswordCrackingTools(HackingToolsCollection):
