@@ -43,7 +43,7 @@ class HackingTool(object):
     PROJECT_URL: str = ""
 
     def __init__(self, options = None, installable: bool = True,
-                 runnable: bool = True, size: bool = True):
+                 runnable: bool = True):
         options = options or []
         if isinstance(options, list):
             self.OPTIONS = []
@@ -51,8 +51,6 @@ class HackingTool(object):
                 self.OPTIONS.append(('Install', self.install))
             if runnable:
                 self.OPTIONS.append(('Run', self.run))
-            if size:
-                self.OPTIONS.append(("Size of the tool ->", print(self.INSTALLED_SIZE)))
             self.OPTIONS.extend(options)
         else:
             raise Exception(
@@ -162,7 +160,7 @@ class HackingToolsCollection(object):
         clear_screen()
         self.show_info()
         for index, tool in enumerate(self.TOOLS):
-            print(f"[{index} {tool.TITLE}")
+            print(f"[{index}] {tool.TITLE}")
         print(f"[{99}] Back to {parent.TITLE if parent is not None else 'Exit'}")
         tool_index = input("Choose a tool to proceed: ")
         try:
