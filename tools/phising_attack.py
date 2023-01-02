@@ -15,7 +15,7 @@ class Setoolkit(HackingTool):
     ]
     RUN_COMMANDS = ["sudo setoolkit"]
     PROJECT_URL = "https://github.com/trustedsec/social-engineer-toolkit"
-
+ 
 
 class SocialFish(HackingTool):
     TITLE = "SocialFish"

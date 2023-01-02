@@ -14,14 +14,12 @@ class Autopsy(HackingTool):
     INSTALL_COMMANDS = ["sudo apt install autopsy"]
     RUN_COMMANDS = ["sudo autopsy"]
 
-    def __init__(self):
-        super(Autopsy, self).__init__(installable = False)
 
 
 class Wireshark(HackingTool):
     TITLE = "Wireshark"
     DESCRIPTION = "Wireshark is a network capture and analyzer \n" \
-                  "tool to see what’s happening in your network.\n " \
+                  "tool to see what is happening in your network.\n " \
                   "And also investigate Network related incident"
     INSTALL_COMMANDS = ["sudo apt install wireshark"]
     RUN_COMMANDS = ["sudo wireshark"]

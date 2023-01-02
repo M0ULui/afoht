@@ -68,6 +68,18 @@ class Dirb(HackingTool):
         uinput = input("Enter Url >> ")
         subprocess.run(["sudo", "dirb", uinput])
 
+class Dirbuster(HackingTool):
+    TITLE = "Dirbuster"
+    DESCRIPTION = "DirBuster is a multi threaded java application designed" \
+                  "to brute force directories and files names \n" \
+                  "on web/application servers. " \
+                  "attack against \n a web server and analizing the response."
+    INSTALL_COMMANDS = [
+        "sudo apt install dirbuster",
+    ]
+    RUN_COMMANDS = [""]
+    PROJECT_URL = "https://gitlab.com/kalilinux/packages/dirb"
+
 
 class WebAttackTools(HackingToolsCollection):
     TITLE = "Web Attack tools"
