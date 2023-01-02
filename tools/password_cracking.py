@@ -17,6 +17,7 @@ class JohnTheRipper(HackingTool):
     PROJECT_URL = "https://www.kali.org/tools/john/"
 
     def run(self):
+        os.system("cd /")
         subinput = input("John >> ")
         subprocess.run([subinput])
 
@@ -30,6 +31,7 @@ class Hydra(HackingTool):
     PROJECT_URL = "https://www.kali.org/tools/hydra/"
     
     def run(self):
+        os.system("cd /")
         subinput = input("Hydra >> ")
         subprocess.run([subinput])
 
