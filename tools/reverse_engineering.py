@@ -78,8 +78,7 @@ class dex2jar(HackingTool):
     INSTALL_COMMANDS = [
         "sudo apt install dex2jar",
     ]
-    RUN_COMMANDS = ["sudo jd-gui"]
-    PROJECT_URL = "https://www.kali.org/tools/jd-gui/"
+    PROJECT_URL = "https://www.kali.org/tools/dex2jar/"
     def run(self):
         print("Available command functions:\n"
         "e.g. < d2j-dex2jar | d2j-jar-remap | dex2jar | d2j-dex-dump | d2j-init-deobf >")

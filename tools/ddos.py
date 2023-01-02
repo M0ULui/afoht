@@ -24,9 +24,9 @@ class MHDDoS(HackingTool):
         #proxylist = input(" Enter ProxyList >> ")
         #multiple = input(" Enter Multiple >> ")
         #timer = input(" Enter Timer >> ")
-        os.system("cd MHDDoS; python3 start.py")
+        os.system(["cd MHDDoS; python3 start.py"])
         subinput = input("MHDDoS => ")
-        subprocess.run([subinput])
+        os.system([subinput])
 
 
 class SlowLoris(HackingTool):
