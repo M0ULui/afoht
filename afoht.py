@@ -16,6 +16,7 @@ from tools.reverse_engineering import ReverseEngineeringTools
 from tools.sql_tools import SqlInjectionTools
 from tools.webattack import WebAttackTools
 from tools.wordlist_generator import WordlistGeneratorTools
+from tools.password_cracking import PasswordCrackingTools
 from tools.management import *
 
 logo = """\033[33m
@@ -44,6 +45,7 @@ all_tools = [
     PayloadCreatorTools(),
     ReverseEngineeringTools(),
     DDOSTools(),
+    PasswordCrackingTools(),
     Management()
 ]
 
@@ -100,10 +102,8 @@ if __name__ == "__main__":
                 r"\033[91m Please Run This Tool On A Debian System For Best Results\e[00m"
             )
             sleep(2)
-            webbrowser.open_new_tab("https://tinyurl.com/y522modc")
-
         else:
-            print("Please Check Your System or Open New Issue ...")
+            print("Please Check Your System and Try Again ...")
 
     except KeyboardInterrupt:
         print("\nExiting ..!!!")

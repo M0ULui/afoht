@@ -80,7 +80,7 @@ if [ $choice == 1 ]; then
 
     if [ -d "$INSTALL_DIR" ]; then
         echo "";
-        echo "[✔] Successfuly Installed !!! \n\n";
+        echo "[✔] Successfuly Installed !!!";
         echo -e $ORANGE "       [✔]+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[✔]"
         echo            "       [✔]                                                             [✔]"
         echo -e $ORANGE "       [✔]    ✔✔✔ Proceed by Typing (afoht) in the Terminal ✔✔✔     [✔]"
