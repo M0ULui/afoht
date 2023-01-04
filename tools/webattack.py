@@ -23,10 +23,10 @@ class Sublist3r(HackingTool):
     PROJECT_URL = "https://github.com/aboul3la/Sublist3r"
 
     def run(self):
-        os.system("cd /home/afoht/Sublist3r/ && python3 /home/afoht/Sublist3r/sublist3r.py -h")
+        os.system("cd /home/afoht/Sublist3r/ && python3 sublist3r.py -h")
         os.system ("echo '\033[1;32m---------------------------------------\033[m';")
         uinput = input("\033[33;5m Sublist3r >>  \033[0m")
-        os.system(uinput)
+        subprocess.run(uinput)
 
 
 class CheckURL(HackingTool):
