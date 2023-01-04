@@ -21,7 +21,9 @@ class Nmap(HackingTool):
 
     def run(self):
         os.system ("nmap -h")
+        os.system ("echo ---------------------------")
         subinput = input('Nmap => ')
+        os.system ("echo ---------------------------")
         os.system(subinput)
 
 #    def __init__(self):
@@ -38,7 +40,9 @@ class DNSRecon(HackingTool):
 
     def run(self):
         os.system ("sudo dnsrecon -h")
+        os.system ("echo ---------------------------")
         subinput = input('DNSRecon =>')
+        os.system ("echo ---------------------------")
         os.system (subinput)
 
 
