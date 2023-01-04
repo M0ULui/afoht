@@ -1,6 +1,6 @@
-ALL-FOR-ONE Hacking Tool (AFOHT)
+##ALL-FOR-ONE Hacking Tool (AFOHT)  <p align="center">
 
-## Installation For Linux <img src="https://konpa.github.io/devicon/devicon.git/icons/linux/linux-original.svg" alt="linux" width="25" height="25"/></p><p align="center">
+## Installation For Linux <p align="center">
 
 #### This Tool Must Run As ROOT !!!
 
