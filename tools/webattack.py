@@ -35,17 +35,15 @@ class CheckURL(HackingTool):
                   "[!] python3 checkURL.py --url google.com"
     INSTALLED_SIZE = "N/A"
     INSTALL_COMMANDS = [
-        "sudo git clone https://github.com/UndeadSec/checkURL.git",
-        "#!/bin/bash python3 /home/afoht/checkURL.py" '${1+"$@"}' > checkURL.py,
-        "sudo chmod+x checkURL.py"]
-    RUN_COMMANDS = ["cd checkURL && python3 checkURL.py --help"]
+        "sudo git clone https://github.com/UndeadSec/checkURL.git"]
+    #RUN_COMMANDS = ["cd checkURL && python3 checkURL.py --help"]
     PROJECT_URL = "https://github.com/UndeadSec/checkURL"
 
     def run(self):
-        #os.system("cd checkURL && python3 checkURL.py --help")
+        os.system("cd checkURL && python3 checkURL.py --help")
         os.system ("echo '\033[1;32m---------------------------------------\033[m';")
         uinput = input("\033[33;5m Enter Url >>  \033[0m")
-        subprocess.run(["sudo", "python3 checkURL.py --url", uinput])
+        subprocess.run(["cd /home/afoht/checkURL/", "sudo python3 checkURL.py --url", uinput])
 
 
 class Dirb(HackingTool):
