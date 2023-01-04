@@ -1,24 +1,24 @@
 ## ALL-FOR-ONE Hacking Tool (AFOHT)  <p align="center">
 
-## Installation For Linux <p align="center">
+## Installation For Kali Linux <p align="center">
 
 #### This Tool Must Run As ROOT !!!
 
-    git clone https://github.com/Z4nzu/hackingtool.git
+    git clone https://github.com/M0ULui/afoht.git
     
-    chmod -R 755 hackingtool  
+    chmod -R 755 afoht 
     
-    cd hackingtool
+    cd afoht
     
     sudo pip3 install -r requirement.txt
     
     bash install.sh
     
-    sudo hackingtool
+    sudo afoht
 
- After Following All Steps Just Type In Terminal **root@kaliLinux:~** **hackingtool**
+ After Following All Steps Just Type In Terminal **root@kaliLinux:~** **afoht**
 
-#### Thanks to original Author of the tools used in hackingtool
+#### Thanks to all the original Creators of the tools included in AFOHT!
 
 <img src ="https://img.shields.io/badge/Important-notice-red" />
 <h4>Please Don't Use for illegal Activity</h4>
