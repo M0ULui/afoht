@@ -43,7 +43,7 @@ class DNSRecon(HackingTool):
 
 
 class PortScan(HackingTool):
-    TITLE = "Port Sanning"
+    TITLE = "Port Scan"
     DESCRIPTION = "Perform Simple Port Scanning with Nmap"
 
     def __init__(self):
