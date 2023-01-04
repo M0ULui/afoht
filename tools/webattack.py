@@ -24,7 +24,8 @@ class Sublist3r(HackingTool):
 
     def run(self):
         os.system("cd Sublist3r && python3 sublist3r.py -h")
-        uinput = input("Sublist3r >> ")
+        os.system ("echo '\033[1;32m---------------------------------------\033[m';")
+        uinput = input("\033[33;5m Sublist3r >>  \033[0m")
         os.system(uinput)
 
 
@@ -40,7 +41,8 @@ class CheckURL(HackingTool):
 
     def run(self):
         os.system("cd checkURL && python3 checkURL.py --help")
-        uinput = input("Enter Url >> ")
+        os.system ("echo '\033[1;32m---------------------------------------\033[m';")
+        uinput = input("\033[33;5m Enter Url >>  \033[0m")
         subprocess.run(["sudo", "python3 checkURL.py --url", uinput])
 
 
@@ -59,7 +61,8 @@ class Dirb(HackingTool):
 
     def run(self):
         os.system("sudo man dirb")
-        uinput = input("Enter Url >> ")
+        os.system ("echo '\033[1;32m---------------------------------------\033[m';")
+        uinput = input("\033[33;5m Enter Url >>  \033[0m")
         subprocess.run(["sudo", "dirb", uinput])
 
 

@@ -19,7 +19,8 @@ class TheFatRat(HackingTool):
 
     def run(self):
         os.system("cd msfpc;sudo bash msfpc.sh -h -v")
-        subinput = input("TheFatRat => ")
+        os.system ("echo '\033[1;32m---------------------------------------\033[m';")
+        subinput = input("\033[33;5m TheFatRat => \033[0m")
         os.system(subinput)
 
 
@@ -53,7 +54,8 @@ class MSFVenom(HackingTool):
 
     def run(self):
         os.system("cd msfpc; sudo bash msfpc.sh -h -v")
-        subinput = input("MSFVenom => ")
+        os.system ("echo '\033[1;32m---------------------------------------\033[m';")
+        subinput = input("\033[33;5m MSFVenom => \033[0m")
         os.system(subinput)
 
 class VeilFramework(HackingTool):

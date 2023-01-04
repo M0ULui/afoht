@@ -19,8 +19,9 @@ class MHDDoS(HackingTool):
     PROJECT_URL = "https://github.com/MatrixTM/MHDDoS.git"
 
     def run(self):
+        os.system ("echo '\033[1;32m---------------------------------------\033[m';")
         os.system(["cd /home/afoht/MHDDoS; python3 start.py HELP"])
-        subinput = input("MHDDoS => ")
+        subinput = input("\033[33;5m MHDDoS => \033[0m")
         os.system(subinput)
 
 
@@ -32,6 +33,7 @@ class SlowLoris(HackingTool):
     INSTALL_COMMANDS = ["sudo pip3 install slowloris"]
 
     def run(self):
+        os.system ("echo '\033[1;32m---------------------------------------\033[m';")
         target_site = input("Enter Target Site:- ")
         subprocess.run(["slowloris", target_site])
 
@@ -49,6 +51,7 @@ class Asyncrone(HackingTool):
     PROJECT_URL = "https://github.com/fatihsnsy/aSYNcrone"
 
     def run(self):
+        os.system ("echo '\033[1;32m---------------------------------------\033[m';")
         source_port = input("Enter Source Port >> ")
         target_ip = input("Enter Target IP >> ")
         target_port = input("Enter Target port >> ")

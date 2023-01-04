@@ -27,7 +27,8 @@ class Pydictor(HackingTool):
 
     def run(self):
         os.system("cd pydictor/ && chmod +x pydictor.py && python pydictor.py")
-        subinput = input("Pydictor => ")
+        os.system ("echo '\033[1;32m---------------------------------------\033[m';")
+        subinput = input("\033[33;5m Pydictor => \033[0m")
         os.system(subinput)
 
 class WlCreator(HackingTool):

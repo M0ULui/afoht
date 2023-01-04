@@ -19,7 +19,7 @@ class Apk2Gold(HackingTool):
     PROJECT_URL = "https://github.com/lxdvs/apk2gold"
 
     def run(self):
-        subinput = input("Enter (.apk) File Path >> ")
+        subinput = input("\033[33;5m Enter (.apk) File path >> \033[0m")
         subprocess.run(["sudo", "apk2gold", subinput])
 
 
@@ -37,7 +37,8 @@ class Apktool(HackingTool):
 
     def run(self):
         os.system("apktool -h")
-        subinput = input("Enter (.apk) File path >> ")
+        os.system ("echo '\033[1;32m---------------------------------------\033[m';")
+        subinput = input("\033[33;5m Enter (.apk) File path >> \033[0m")
         subprocess.run(["sudo", "apktool d", subinput])
 
 class JDGui(HackingTool):
@@ -63,9 +64,11 @@ class dex2jar(HackingTool):
     PROJECT_URL = "https://www.kali.org/tools/dex2jar/"
     
     def run(self):
+        os.system ("echo '\033[1;32m---------------------------------------\033[m';")
         print("Available command functions:\n"
         "e.g. < d2j-dex2jar | d2j-jar-remap | dex2jar | d2j-dex-dump | d2j-init-deobf >")
-        subinput = input("dex2jar >> ")
+        os.system ("echo '\033[1;32m---------------------------------------\033[m';")
+        subinput = input("\033[33;5m Dex2jar => \033[0m")
         os.system(subinput)
 
 class ReverseEngineeringTools(HackingToolsCollection):

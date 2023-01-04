@@ -16,7 +16,8 @@ class JohnTheRipper(HackingTool):
 
     def run(self):
         os.system("cd /; sudo john")
-        subinput = input("John >> ")
+        os.system ("echo '\033[1;32m---------------------------------------\033[m';")
+        subinput = input("\033[33;5m JohnTheRipper => \033[0m")
         os.system(subinput)
 
 
@@ -30,7 +31,8 @@ class Hydra(HackingTool):
     
     def run(self):
         os.system("cd /; sudo hydra; sudo hydra -h")
-        subinput = input("Hydra >> ")
+        os.system ("echo '\033[1;32m---------------------------------------\033[m';")
+        subinput = input("\033[33;5m Hydra => \033[0m")
         os.system(subinput)
 
 
