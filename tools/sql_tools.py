@@ -31,11 +31,20 @@ class NoSqlMap(HackingTool):
     RUN_COMMANDS = ["cd /home/afoht; python NoSQLMap"]
     PROJECT_URL = "https://github.com/codingo/NoSQLMap"
 
-
+class Sqlninja(HackingTool):
+    TITLE = "Sqlnijnja"
+    DESCRIPTION = "Sqlninja is a tool targeted to exploit SQL Injection vulnerabilities" \
+                  "on a web application that uses Microsoft SQL Server as its back-end." 
+    INSTALLED_SIZE = "10.51 MB"
+    INSTALL_COMMANDS = [
+        "sudo apt install sqlninja"]
+    RUN_COMMANDS = ["sudo sqlninja"]
+    PROJECT_URL = "https://www.kali.org/tools/sqlninja/"
 
 class SqlInjectionTools(HackingToolsCollection):
     TITLE = "SQL Injection Tools"
     TOOLS = [
         Sqlmap(),
-        NoSqlMap()
+        NoSqlMap(),
+        Sqlninja()
     ]
