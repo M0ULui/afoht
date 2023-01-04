@@ -35,7 +35,9 @@ class CheckURL(HackingTool):
                   "[!] python3 checkURL.py --url google.com"
     INSTALLED_SIZE = "N/A"
     INSTALL_COMMANDS = [
-        "sudo git clone https://github.com/UndeadSec/checkURL.git; sudo chmod +x /home/afoht/checkURL"]
+        "sudo git clone https://github.com/UndeadSec/checkURL.git",
+        "#!/bin/bash python3 /home/afoht/checkURL.py" '${1+"$@"}' > checkURL.py,
+        "sudo chmod+x checkURL.py"]
     RUN_COMMANDS = ["cd checkURL && python3 checkURL.py --help"]
     PROJECT_URL = "https://github.com/UndeadSec/checkURL"
 
