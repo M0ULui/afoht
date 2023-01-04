@@ -75,10 +75,11 @@ if __name__ == "__main__":
                 choice = input("AFOHT =>> ")
 
                 if choice == "1":
-                    inpath = input("Enter Path (with Directory Name) >> ")
+                    print("Manual Path will be available in the near future!")
+                    Manpath = "/home/afoht/"
                     with open(fpath, "w") as f:
-                        f.write(inpath)
-                    print(f"Successfully Set Path to: {inpath}")
+                        f.write(Manpath)
+                    print(f"Successfully Set to Default Path: {Manpath}")
                 elif choice == "2":
                     autopath = "/home/afoht/"
                     with open(fpath, "w") as f:

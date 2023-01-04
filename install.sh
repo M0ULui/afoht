@@ -16,7 +16,7 @@ WHITE='\e[37m'
 NC='\e[0m'
 purpal='\033[35m'
 
-echo -e "${ORANGE} "
+echo -e "${CYAN} "
 echo ""
 echo "    _    _     _          _____ ___  ____        ___  _   _ _____ ";
 echo "   / \  | |   | |        |  ___/ _ \|  _ \      / _ \| \ | | ____|";
@@ -32,7 +32,7 @@ echo "|_| |_/_/   \_\____|_|\_\___|_| \_|\____|    |_| \___/ \___/|_____|";
 
 echo -e "${BLUE}                                    https://github.com/M0ULui/afoht ${NC}"
 echo -e "${RED}                                     [!] This Tool Must Run As ROOT [!]${NC}\n"
-echo -e ${CYAN}                "Available OS Options : \n"
+echo -e ${ORANGE}                "Available OS Options : \n"
 echo -e "${WHITE}              [1] Kali Linux"
 echo -e "${WHITE}              [0] Exit "
 echo -n -e "AFOHT >> "

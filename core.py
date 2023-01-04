@@ -94,7 +94,7 @@ class HackingTool(object):
 
     def before_install(self):
         print("The size of this tools is: " + self.INSTALLED_SIZE)
-        print_exc()
+        #print_exc()
         input("\n\n-- Press ENTER to INSTALL --")
         pass
 
