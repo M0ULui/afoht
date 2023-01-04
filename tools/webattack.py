@@ -35,7 +35,6 @@ class CheckURL(HackingTool):
     INSTALLED_SIZE = "N/A"
     INSTALL_COMMANDS = [
         "sudo git clone https://github.com/UndeadSec/checkURL.git"]
-    #RUN_COMMANDS = ["cd checkURL && python3 checkURL.py --help"]
     PROJECT_URL = "https://github.com/UndeadSec/checkURL"
 
     def run(self):
@@ -61,8 +60,8 @@ class Dirb(HackingTool):
     def run(self):
         os.system("sudo man dirb")
         os.system ("echo '\033[1;32m---------------------------------------\033[m';")
-        uinput = input("\033[33;5m Enter Url >>  \033[0m")
-        subprocess.run(["sudo", "dirb", uinput])
+        subinput = input("\033[33;5m Enter Url >>  \033[0m")
+        os.system("sudo dirb " + subinput)
 
 
 class Dirbuster(HackingTool):

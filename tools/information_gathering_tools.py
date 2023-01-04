@@ -12,7 +12,7 @@ from core import clear_screen
 class Nmap(HackingTool):
     TITLE = "Network Map (nmap)"
     DESCRIPTION = "Free and open source utility for network discovery and security auditing"
-    INSTALLED_SIZE = "4.86 MB"
+    INSTALLED_SIZE = "97.17 MB"
     INSTALL_COMMANDS = [
         "sudo git clone https://github.com/nmap/nmap.git",
         "sudo chmod -R 755 nmap && cd nmap && sudo ./configure && make && sudo make install"

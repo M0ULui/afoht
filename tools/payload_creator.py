@@ -31,36 +31,16 @@ class TheFatRat(HackingTool):
         os.system("cd TheFatRat && sudo chmod +x chk_tools && ./chk_tools")
 
 
-
-class MSFVenom(HackingTool):
-    TITLE = "MSFvenom Payload Creator"
-    DESCRIPTION = "MSFvenom Payload Creator (MSFPC) is a wrapper to generate \n" \
-                  "multiple types of payloads, based on users choice.\n" \
-                  "The idea is to be as simple as possible (only requiring " \
-                  "one input) \nto produce their payload."
-    INSTALLED_SIZE = "N/A"
-    INSTALL_COMMANDS = [
-        "sudo git clone https://github.com/g0tmi1k/msfpc.git",
-        "cd msfpc;sudo chmod +x msfpc.sh"
-    ]
-    PROJECT_URL = "https://github.com/g0tmi1k/msfpc"
-
-    def run(self):
-        os.system("cd msfpc; sudo bash msfpc.sh -h -v")
-        os.system ("echo '\033[1;32m---------------------------------------\033[m';")
-        subinput = input("\033[33;5m MSFVenom => \033[0m")
-        os.system(subinput)
-
 class VeilFramework(HackingTool):
     TITLE = "VeilFramework"
     DESCRIPTION = "Veil is a tool designed to generate metasploit payloads\n" \
                   "that bypass common anti-virus solutions.\n"
-    INSTALLED_SIZE = "N/A"
+    INSTALLED_SIZE = "767 MB"
     INSTALL_COMMANDS = [
         "apt -y install veil",
         "/usr/share/veil/config/setup.sh --force --silent"
     ]
-    RUN_COMMANDS = ["./Veil.py"]
+    RUN_COMMANDS = ["sudo veil"]
     PROJECT_URL = "https://github.com/Veil-Framework/Veil"
 
 
@@ -69,6 +49,5 @@ class PayloadCreatorTools(HackingToolsCollection):
     TITLE = "Payload Creation Tools"
     TOOLS = [
         TheFatRat(),
-        MSFVenom(),
         VeilFramework()
     ]

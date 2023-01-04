@@ -39,7 +39,7 @@ class Apktool(HackingTool):
         os.system("apktool -h")
         os.system ("echo '\033[1;32m---------------------------------------\033[m';")
         subinput = input("\033[33;5m Enter (.apk) File path >> \033[0m")
-        subprocess.run(["sudo", "apktool d", subinput])
+        os.system( "apktool d -f" + subinput)
 
 class JDGui(HackingTool):
     TITLE = "JD-Gui"

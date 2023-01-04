@@ -19,20 +19,6 @@ class Sqlmap(HackingTool):
     RUN_COMMANDS = ["cd sqlmap-dev;python3 sqlmap.py --wizard"]
     PROJECT_URL = "https://github.com/sqlmapproject/sqlmap"
 
-class NoSqlMap(HackingTool):
-    TITLE = "NoSqlMap"
-    DESCRIPTION = "NoSQLMap is an open source Python tool designed to \n " \
-                  "audit as well as automating injection based attacks and exploits.\n " \
-                  "\033[91m " \
-                  "[*] Please Install MongoDB \n "
-    INSTALLED_SIZE = "N/A"
-    INSTALL_COMMANDS = [
-        "git clone https://github.com/codingo/NoSQLMap.git",
-        "sudo chmod -R 755 NoSQLMap;cd NoSQLMap;python setup.py install"
-    ]
-    RUN_COMMANDS = ["cd /home/afoht/NoSQLMap; python NoSQLMap"]
-    PROJECT_URL = "https://github.com/codingo/NoSQLMap"
-
 class Sqlninja(HackingTool):
     TITLE = "Sqlnijnja"
     DESCRIPTION = "Sqlninja is a tool targeted to exploit SQL Injection vulnerabilities\n" \
@@ -53,6 +39,5 @@ class SqlInjectionTools(HackingToolsCollection):
     TITLE = "SQL Injection Tools"
     TOOLS = [
         Sqlmap(),
-        NoSqlMap(),
         Sqlninja()
     ]
