@@ -12,17 +12,10 @@ class TheFatRat(HackingTool):
     INSTALLED_SIZE = "476.11 MB"
     INSTALL_COMMANDS = [
         "sudo git clone https://github.com/Screetsec/TheFatRat.git",
-        "cd TheFatRat && sudo chmod +x setup.sh",
-        "sudo bash setup.sh"
+        "cd TheFatRat && sudo chmod +x setup.sh && sudo bash setup.sh",
     ]
+    RUN_COMMANDS = ["sudo fatrat"]
     PROJECT_URL = "https://github.com/Screetsec/TheFatRat"
-
-    def run(self):
-        os.system("cd TheFatRat && sudo bash setup.sh")
-        os.system ("echo '\033[1;32m---------------------------------------\033[m';")
-        subinput = input("\033[33;5m TheFatRat => \033[0m")
-        os.system(subinput)
-
 
     def __init__(self):
         super(TheFatRat, self).__init__([
