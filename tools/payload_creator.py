@@ -9,7 +9,6 @@ class TheFatRat(HackingTool):
     TITLE = "The FatRat"
     DESCRIPTION = "TheFatRat Provides An Easy way to create Backdoors and \n" \
                   "Payload which can bypass most anti-virus"
-    INSTALLED_SIZE = "Above average storage requirement"
     INSTALL_COMMANDS = [
         "sudo git clone https://github.com/Screetsec/TheFatRat.git",
         "cd TheFatRat && sudo chmod +x setup.sh",
@@ -44,7 +43,6 @@ class MSFVenom(HackingTool):
                   "multiple types of payloads, based on users choice.\n" \
                   "The idea is to be as simple as possible (only requiring " \
                   "one input) \nto produce their payload."
-    INSTALLED_SIZE = "N/A"
     INSTALL_COMMANDS = [
         "sudo git clone https://github.com/g0tmi1k/msfpc.git",
         "cd msfpc;sudo chmod +x msfpc.sh"
@@ -60,7 +58,6 @@ class VeilFramework(HackingTool):
     TITLE = "VeilFramework"
     DESCRIPTION = "Veil is a tool designed to generate metasploit payloads\n" \
                   "that bypass common anti-virus solutions.\n"
-    INSTALLED_SIZE = "N/A"
     INSTALL_COMMANDS = [
         "apt -y install veil",
         "/usr/share/veil/config/setup.sh --force --silent"
@@ -71,7 +68,7 @@ class VeilFramework(HackingTool):
 
 
 class PayloadCreatorTools(HackingToolsCollection):
-    TITLE = "Payload Creation Tools"
+    TITLE = "Payload creation tools"
     TOOLS = [
         TheFatRat(),
         MSFVenom(),
