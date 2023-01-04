@@ -48,6 +48,6 @@ class WordlistGeneratorTools(HackingToolsCollection):
     TITLE = "Wordlist Generator"
     TOOLS = [
         Cupp(),
-        WlCreator().
+        WlCreator(),
         Pydictor()
     ]
