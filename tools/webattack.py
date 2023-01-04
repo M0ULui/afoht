@@ -25,7 +25,7 @@ class Sublist3r(HackingTool):
     def run(self):
         os.system("cd Sublist3r && python3 sublist3r.py -h")
         subinput = input('Enter URL >>')
-        subprocess.run('cd Sublist3r && python3 sublist3r.py -d', subinput, capture_output=True, text=True, shell=True)
+        os.system("cd Sublist3r && python3 sublist3r.py -d" + subinput)
 
 
 class CheckURL(HackingTool):
