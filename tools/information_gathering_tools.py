@@ -12,12 +12,17 @@ from core import clear_screen
 class Nmap(HackingTool):
     TITLE = "Network Map (nmap)"
     DESCRIPTION = "Free and open source utility for network discovery and security auditing"
+    INSTALLED_SIZE = "4.86 MB"
     INSTALL_COMMANDS = [
         "sudo git clone https://github.com/nmap/nmap.git",
         "sudo chmod -R 755 nmap && cd nmap && sudo ./configure && make && sudo make install"
     ]
-    RUN_COMMANDS = ["nmap -h"]
     PROJECT_URL = "https://github.com/nmap/nmap"
+
+    def run(self):
+        os.system (["nmap -h"])
+        subinput = input('Nmap => ')
+        os.system ([subinput])
 
 #    def __init__(self):
  #       super(Nmap, self).__init__(runnable = False)
@@ -26,9 +31,15 @@ class DNSRecon(HackingTool):
     TITLE = "DNSRecon"
     DESCRIPTION = "DNSRecon is a Python script that provides the ability to perform \n" \
                     "Multiple Enumeration and lookup tasks"
+    INSTALLED_SIZE = "1.4 MB"
     INSTALL_COMMANDS = ["sudo apt install dnsrecon"]
     RUN_COMMANDS = ["sudo dnsrecon -h"]
     PROJECT_URL = "https://www.kali.org/tools/dnsrecon/"
+
+    def run(self):
+        os.system (["sudo dnsrecon -h"])
+        subinput = input('DNSRecon =>')
+        os.system ([subinput])
 
 
 class PortScan(HackingTool):
@@ -38,23 +49,8 @@ class PortScan(HackingTool):
         super(PortScan, self).__init__(installable = False)
 
     def run(self):
-        clear_screen()
         target = input('Select a Target IP: ')
         subprocess.run(["sudo", "nmap", "-O", "-Pn", target])
-
-
-
-class XeroSploit(HackingTool):
-    TITLE = "Xerosploit"
-    DESCRIPTION = "Xerosploit is a penetration testing toolkit whose goal is to perform\n" \
-                  "man-in-the-middle attacks for testing purposes"
-    INSTALL_COMMANDS = [
-        "git clone https://github.com/LionSec/xerosploit.git",
-        "cd xerosploit && sudo python install.py"
-    ]
-    RUN_COMMANDS = ["sudo xerosploit"]
-    PROJECT_URL = "https://github.com/LionSec/xerosploit"
-
 
 
 class ReconSpider(HackingTool):
@@ -63,9 +59,10 @@ class ReconSpider(HackingTool):
                   " Framework for scanning IP Address, Emails, \n" \
                   "Websites, Organizations and find out information from" \
                   " different sources.\n"
+    INSTALLED_SIZE = "N/A"
     INSTALL_COMMANDS = [
         "sudo git clone https://github.com/bhavsec/reconspider.git",
-        "sudo apt install python3 python3-pip && cd reconspider && sudo python3 setup.py install"
+        "sudo apt install python3 python3-pip; cd reconspider; sudo python3 setup.py install",
     ]
     RUN_COMMANDS = ["cd reconspider;python3 reconspider.py"]
     PROJECT_URL = "https://github.com/bhavsec/reconspider"
@@ -75,18 +72,19 @@ class ReconSpider(HackingTool):
 
 
 class PortScannerRanger(HackingTool):
-    TITLE = "Port Scanner - rang3r"
-    DESCRIPTION = "rang3r is a python script which scans in multi thread\n " \
+    TITLE = "Port Scanner - Ranger"
+    DESCRIPTION = "Ranger is a python script which scans in multi thread\n " \
                   "all alive hosts within your range that you specify."
+    INSTALLED_SIZE = "N/A"
     INSTALL_COMMANDS = [
-        "git clone https://github.com/floriankunushevci/rang3r.git;"
-        "sudo pip install termcolor"]
-    PROJECT_URL = "https://github.com/floriankunushevci/rang3r"
-
-    def run(self):
-        ip = input("Enter Ip >> ")
-        os.chdir("rang3r")
-        subprocess.run(["sudo", "python", "rang3r.py", "--ip", ip])
+        "git clone https://github.com/joeyagreco/ranger-reloaded.git;"
+        "cd ranger-reloaded; sudo pip install -r requirements.txt"]
+    PROJECT_URL = "https://github.com/joeyagreco/ranger-reloaded"
+    RUN_COMMANDS = ["sudo py app.py"]
+    
+    #def run(self):
+        #os.chdir("rang3r")
+        #subprocess.run(["sudo", "python", "rang3r.py", "--ip", ip])
 
 
 
@@ -95,7 +93,6 @@ class InformationGatheringTools(HackingToolsCollection):
     TOOLS = [
         Nmap(),
         PortScan(),
-        XeroSploit(),
         ReconSpider(),
         PortScannerRanger()
     ]

@@ -1,6 +1,5 @@
 # coding=utf-8
 import os
-import subprocess
 
 from core import HackingTool
 from core import HackingToolsCollection
@@ -16,14 +15,10 @@ class JohnTheRipper(HackingTool):
     PROJECT_URL = "https://www.kali.org/tools/john/"
 
     def run(self):
-        print("Input <99> to STOP")
         os.system("cd /; sudo john")
         subinput = input("John >> ")
-        for x in subinput:
-            if x != "99":
-                os.system(subinput)
-            else:
-                pass
+        os.system(subinput)
+
 
 class Hydra(HackingTool):
     TITLE = "Hydra"
@@ -36,11 +31,7 @@ class Hydra(HackingTool):
     def run(self):
         os.system("cd /; sudo hydra; sudo hydra -h")
         subinput = input("Hydra >> ")
-        subprocess.run([subinput])
-
-
-
-
+        os.system(subinput)
 
 
 class PasswordCrackingTools(HackingToolsCollection):

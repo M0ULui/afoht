@@ -9,8 +9,9 @@ class MHDDoS(HackingTool):
     TITLE ="MHDDoS"
     DESCRIPTION = "DDoS Attack Scripts with 56 Methods." \
                   "\n\b DDoS attacks" \
-                  "for SECURITY TESTING PURPOSES ONLY! "
-    
+                  "for SECURITY TESTING PURPOSES ONLY! \n " \
+                    "Please refer to the Project Page for more guidance! "
+    INSTALLED_SIZE = "N/A"
     INSTALL_COMMANDS = [
         "git clone https://github.com/MatrixTM/MHDDoS.git",
         "cd MHDDoS;sudo pip install -r requirements.txt"
@@ -18,13 +19,7 @@ class MHDDoS(HackingTool):
     PROJECT_URL = "https://github.com/MatrixTM/MHDDoS.git"
 
     def run(self):
-        #method = input("Enter Method >> ")
-        #url = input("Enter URL >> ")
-        #threads = input("Enter Threads >> ")
-        #proxylist = input(" Enter ProxyList >> ")
-        #multiple = input(" Enter Multiple >> ")
-        #timer = input(" Enter Timer >> ")
-        os.system(["cd MHDDoS; python3 start.py"])
+        os.system(["cd /home/afoht/MHDDoS; python3 start.py HELP"])
         subinput = input("MHDDoS => ")
         os.system([subinput])
 
@@ -33,6 +28,7 @@ class SlowLoris(HackingTool):
     TITLE = "SlowLoris"
     DESCRIPTION = "Slowloris is basically an HTTP Denial of Service attack." \
                   "It floods targeted sites with HTTP Requests"
+    INSTALLED_SIZE = "36 KB"
     INSTALL_COMMANDS = ["sudo pip3 install slowloris"]
 
     def run(self):
@@ -45,9 +41,10 @@ class Asyncrone(HackingTool):
     DESCRIPTION = "aSYNcrone is a C language based, mulltifunction SYN Flood " \
                   "DDoS Weapon.\nDisable the destination system by sending a " \
                   "SYN packet intensively to the destination."
+    INSTALLED_SIZE = "N/A"
     INSTALL_COMMANDS = [
-        "git clone https://github.com/fatih4842/aSYNcrone.git",
-        "cd aSYNcrone;sudo gcc aSYNcrone.c -o aSYNcrone -lpthread"
+        "git clone https://github.com/fatihsnsy/aSYNcrone.git",
+        "cd aSYNcrone;sudo gcc aSYNcrone.c -o aSYNcrone -lpthread -02"
     ]
     PROJECT_URL = "https://github.com/fatihsnsy/aSYNcrone"
 
@@ -64,7 +61,7 @@ class Asyncrone(HackingTool):
 class DDOSTools(HackingToolsCollection):
     TITLE = "DDOS Attack Tools"
     TOOLS = [
-        MHDDoS(),
         SlowLoris(),
-        Asyncrone()
+        Asyncrone(),
+        MHDDoS()
     ]
