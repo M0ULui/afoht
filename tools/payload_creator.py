@@ -9,7 +9,7 @@ class TheFatRat(HackingTool):
     TITLE = "TheFatRat"
     DESCRIPTION = "TheFatRat Provides An Easy way to create Backdoors and \n" \
                   "Payload which can bypass most anti-virus"
-    INSTALLED_SIZE = "Above average storage requirement"
+    INSTALLED_SIZE = "476.11 MB"
     INSTALL_COMMANDS = [
         "sudo git clone https://github.com/Screetsec/TheFatRat.git",
         "cd TheFatRat && sudo chmod +x setup.sh",
@@ -18,7 +18,7 @@ class TheFatRat(HackingTool):
     PROJECT_URL = "https://github.com/Screetsec/TheFatRat"
 
     def run(self):
-        os.system("cd msfpc;sudo bash msfpc.sh -h -v")
+        os.system("cd TheFatRat && sudo bash setup.sh")
         os.system ("echo '\033[1;32m---------------------------------------\033[m';")
         subinput = input("\033[33;5m TheFatRat => \033[0m")
         os.system(subinput)

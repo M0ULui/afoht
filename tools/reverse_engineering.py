@@ -66,7 +66,7 @@ class dex2jar(HackingTool):
     def run(self):
         os.system ("echo '\033[1;32m---------------------------------------\033[m';")
         print("Available command functions:\n"
-        "e.g. < d2j-dex2jar | d2j-jar-remap | dex2jar | d2j-dex-dump | d2j-init-deobf >")
+        "e.g. < d2j-apk-sign | d2j-decrypt-string | d2j-asm-verify | d2j-baksmali | d2j-dex2jar >")
         os.system ("echo '\033[1;32m---------------------------------------\033[m';")
         subinput = input("\033[33;5m Dex2jar => \033[0m")
         os.system(subinput)
@@ -76,7 +76,6 @@ class ReverseEngineeringTools(HackingToolsCollection):
     TOOLS = [
         Apktool(),
         JDGui(),
-        dex2jar(),
-        Apk2Gold()
+        dex2jar()
     ]
 
