@@ -21,8 +21,8 @@ class Nmap(HackingTool):
 
     def run(self):
         os.system ("nmap -h")
-        os.system ("echo -e  '\033[1;32m---------------------------\033[m';")
-        subinput = input('\e[33m Nmap => ')
+        os.system ("echo '\033[1;32m---------------------------\033[m';")
+        subinput = input("'\033[1;32m[33m Nmap => \033[m';'")
         os.system(subinput)
 
 #    def __init__(self):
