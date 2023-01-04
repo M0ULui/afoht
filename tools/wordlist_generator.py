@@ -8,8 +8,8 @@ from core import HackingToolsCollection
 
 class Cupp(HackingTool):
     TITLE = "Cupp"
-    DESCRIPTION = "WlCreator is a C program that can create all possibilities of passwords,\n " \
-                  "and you can choose Length, Lowercase, Capital, Numbers and Special Chars"
+    DESCRIPTION = "Cupp is a tool that can create all possibilities of passwords\n" \
+                    "with various functions available in the tool itself."
     INSTALLED_SIZE = "N/A"
     INSTALL_COMMANDS = ["git clone https://github.com/Mebus/cupp.git"]
     RUN_COMMANDS = ["cd cupp && python3 cupp.py -i"]
@@ -30,7 +30,7 @@ class Pydictor(HackingTool):
         os.system("cd pydictor/ && chmod +x pydictor.py && python pydictor.py")
         os.system ("echo '\033[1;32m---------------------------------------\033[m';")
         subinput = input("\033[33;5m Pydictor => \033[0m")
-        subprocess.run(["cd", "/home/afoht/pydictor/", "&&", "chmod +x", "pydictor.py", "&&",subinput])
+        os.system(["cd pydictor/ && chmod +x pydictor.py &&",subinput])
 
 class WlCreator(HackingTool):
     TITLE = "WordlistCreator"
