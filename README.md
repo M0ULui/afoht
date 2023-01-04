@@ -25,8 +25,9 @@
  After Installation, Run AFOHT with this single command:
     
     sudo afoht
+
     
 #### Thanks to all the original Creators of the tools included in AFOHT!
 
-<img src ="https://img.shields.io/badge/Important-notice-red" />
-<h4>Please Don't Use for illegal Activity</h4>
+  
+#### Please Don't Use AFOHT for illegal Activity</h4>
