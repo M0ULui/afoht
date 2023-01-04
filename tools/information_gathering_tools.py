@@ -56,29 +56,11 @@ class PortScan(HackingTool):
         subprocess.run(["sudo", "nmap", "-O", "-Pn", target])
 
 
-class ReconSpider(HackingTool):
-    TITLE = "ReconSpider(For All Scaning)"
-    DESCRIPTION = "ReconSpider is most Advanced Open Source Intelligence (OSINT)" \
-                  " Framework for scanning IP Address, Emails, \n" \
-                  "Websites, Organizations and find out information from" \
-                  " different sources.\n"
-    INSTALLED_SIZE = "N/A"
-    INSTALL_COMMANDS = [
-        "sudo git clone https://github.com/bhavsec/reconspider.git",
-        "sudo apt install python3 python3-pip; cd reconspider; sudo python3 setup.py install",
-    ]
-    RUN_COMMANDS = ["cd reconspider;python3 reconspider.py"]
-    PROJECT_URL = "https://github.com/bhavsec/reconspider"
-
-#    def __init__(self):
-#        super(ReconSpider, self).__init__(runnable = False)
-
 
 class InformationGatheringTools(HackingToolsCollection):
     TITLE = "Information gathering tools"
     TOOLS = [
         Nmap(),
-        PortScan(),
         DNSRecon(),
-        ReconSpider()
+        PortScan()
     ]

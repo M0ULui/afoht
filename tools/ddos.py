@@ -65,6 +65,6 @@ class DDOSTools(HackingToolsCollection):
     TITLE = "DDOS Attack Tools"
     TOOLS = [
         SlowLoris(),
-        Asyncrone(),
-        MHDDoS()
+        MHDDoS(),
+        Asyncrone()
     ]

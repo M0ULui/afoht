@@ -31,26 +31,11 @@ class NoSqlMap(HackingTool):
     RUN_COMMANDS = ["cd /home/afoht; python NoSQLMap"]
     PROJECT_URL = "https://github.com/codingo/NoSQLMap"
 
-class Leviathan(HackingTool):
-    TITLE = "Leviathan - Wide Range Mass Audit Toolkit"
-    DESCRIPTION = "Leviathan is a mass audit toolkit which has wide range " \
-                  "service discovery,\nbrute force, SQL injection detection " \
-                  "and running custom exploit capabilities. \n " \
-                  "[*] It Requires API Keys \n " \
-                  "More Usage [!] https://github.com/utkusen/leviathan/wiki"
-    INSTALLED_SIZE = "N/A"
-    INSTALL_COMMANDS = [
-        "git clone https://github.com/leviathan-framework/leviathan.git",
-        "cd leviathan;sudo pip install -r requirements.txt"
-    ]
-    RUN_COMMANDS = ["cd leviathan;python leviathan.py"]
-    PROJECT_URL = "https://github.com/leviathan-framework/leviathan"
 
 
 class SqlInjectionTools(HackingToolsCollection):
     TITLE = "SQL Injection Tools"
     TOOLS = [
         Sqlmap(),
-        Leviathan(),
         NoSqlMap()
     ]
