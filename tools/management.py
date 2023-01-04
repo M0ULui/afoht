@@ -11,6 +11,7 @@ class UpdateTool(HackingTool):
     DESCRIPTION = "Update Tool or System"
 
     def __init__(self):
+        TITLE = "Update Tool"
         super(UpdateTool, self).__init__([
             ("Update System", self.update_sys),
             ("Update AFOHT", self.update_ht)
@@ -59,7 +60,7 @@ class UninstallTool(HackingTool):
 
 
 class Management(HackingToolsCollection):
-    TITLE = "Update or Uninstall | AFOHT"
+    TITLE = "Update or Uninstall"
     TOOLS = [
         UpdateTool(),
         UninstallTool()
