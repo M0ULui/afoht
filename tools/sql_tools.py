@@ -30,12 +30,12 @@ class NoSqlMap(HackingTool):
         "git clone https://github.com/codingo/NoSQLMap.git",
         "sudo chmod -R 755 NoSQLMap;cd NoSQLMap;python setup.py install"
     ]
-    RUN_COMMANDS = ["cd /home/afoht; python NoSQLMap"]
+    RUN_COMMANDS = ["cd /home/afoht/NoSQLMap; python NoSQLMap"]
     PROJECT_URL = "https://github.com/codingo/NoSQLMap"
 
 class Sqlninja(HackingTool):
     TITLE = "Sqlnijnja"
-    DESCRIPTION = "Sqlninja is a tool targeted to exploit SQL Injection vulnerabilities" \
+    DESCRIPTION = "Sqlninja is a tool targeted to exploit SQL Injection vulnerabilities\n" \
                   "on a web application that uses Microsoft SQL Server as its back-end.\n"\
                     "[!] e.g. sqlninja -m t -f /root/sqlninja.conf" 
     INSTALLED_SIZE = "10.51 MB"
