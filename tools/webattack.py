@@ -26,7 +26,7 @@ class Sublist3r(HackingTool):
         #os.system("cd Sublist3r && python3 sublist3r.py -h")
         os.system("echo '\033[1;32m---------------------------------------\033[m'")
         subinput = input('Sublist3r >>')
-        os.system(subinput)
+        os.system("cd Sublist3r &&", subinput)
 
 
 class CheckURL(HackingTool):
