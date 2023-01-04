@@ -39,10 +39,10 @@ class CheckURL(HackingTool):
     PROJECT_URL = "https://github.com/UndeadSec/checkURL"
 
     def run(self):
-        os.system("cd checkURL && python3 checkURL.py --help")
-        os.system ("echo '\033[1;32m---------------------------------------\033[m';")
-        subinput = input("\033[33;5m Enter Url >>\033[0m")
-        os.system(["cd checkURL && python3 checkURL.py --url " + subinput])
+        os.system("cd checkURL && python3 checkURL.py --url google.com")
+        #os.system ("echo '\033[1;32m---------------------------------------\033[m';")
+        #subinput = input("\033[33;5m Enter Url >>\033[0m")
+        #os.system(["cd checkURL && python3 checkURL.py --url " + subinput])
 
 
 class Dirb(HackingTool):
