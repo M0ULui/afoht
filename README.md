@@ -1,4 +1,4 @@
-##ALL-FOR-ONE Hacking Tool (AFOHT)  <p align="center">
+## ALL-FOR-ONE Hacking Tool (AFOHT)  <p align="center">
 
 ## Installation For Linux <p align="center">
 
