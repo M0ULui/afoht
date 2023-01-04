@@ -22,7 +22,7 @@ class Nmap(HackingTool):
     def run(self):
         os.system ("nmap -h")
         os.system ("echo ---------------------------")
-        subinput = input('Nmap => ')
+        subinput = input('\e[33m Nmap => ')
         os.system ("echo ---------------------------")
         os.system(subinput)
 
@@ -41,7 +41,7 @@ class DNSRecon(HackingTool):
     def run(self):
         os.system ("sudo dnsrecon -h")
         os.system ("echo ---------------------------")
-        subinput = input('DNSRecon =>')
+        subinput = input('\e[33m DNSRecon =>')
         os.system ("echo ---------------------------")
         os.system (subinput)
 
