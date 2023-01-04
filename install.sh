@@ -30,12 +30,12 @@ echo "| |_| | / _ \| |   | ' / | ||  \| | |  _     | || | | | | | | |    ";
 echo "|  _  |/ ___ \ |___| . \ | || |\  | |_| |    | || |_| | |_| | |___ ";
 echo "|_| |_/_/   \_\____|_|\_\___|_| \_|\____|    |_| \___/ \___/|_____|";
 
-echo -e "${BLUE}                                    https://github.com/M0ULui/afoht ${NC}"
-echo -e "${RED}                                     [!] This Tool Must Run As ROOT [!]${NC}\n"
+echo -e "${BLUE}  https://github.com/M0ULui/afoht ${NC}"
+echo -e "${RED}  [!] This Tool Must Run As ROOT [!]${NC}\n"
 echo -e ${ORANGE}                "Available OS Options : \n"
 echo -e "${WHITE}              [1] Kali Linux"
 echo -e "${WHITE}              [0] Exit "
-echo -n -e "AFOHT >> "
+echo -n -e "${YELLOW}AFOHT >> "
 read choice
 INSTALL_DIR="/usr/share/doc/afoht"
 BIN_DIR="/usr/bin/"
