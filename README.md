@@ -27,7 +27,7 @@
     sudo afoht
 
     
-#### Thanks to all the original Creators of the tools included in AFOHT!
+#### Thanks to all the Original Creators of the tools included in AFOHT!
 
   
 #### Please Don't Use AFOHT for illegal Activity</h4>
