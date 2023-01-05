@@ -46,7 +46,7 @@ class Asyncrone(HackingTool):
     INSTALLED_SIZE = "N/A"
     INSTALL_COMMANDS = [
         "git clone https://github.com/fatihsnsy/aSYNcrone.git",
-        "cd aSYNcrone;sudo gcc aSYNcrone.c -o aSYNcrone -lpthread -02"
+        "cd aSYNcrone;sudo gcc aSYNcrone.c -o aSYNcrone -lpthread"
     ]
     PROJECT_URL = "https://github.com/fatihsnsy/aSYNcrone"
 
