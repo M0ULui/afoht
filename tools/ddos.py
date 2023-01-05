@@ -19,10 +19,10 @@ class MHDDoS(HackingTool):
     PROJECT_URL = "https://github.com/MatrixTM/MHDDoS.git"
 
     def run(self):
-        os.system ("echo '\033[1;32m---------------------------------------\033[m';")
         os.system("cd MHDDoS && python3 start.py HELP")
+        os.system ("echo '\033[1;32m---------------------------------------\033[m';")
         subinput = input("\033[33;5m MHDDoS => \033[0m")
-        os.system(subinput)
+        os.system("cd MHDDoS && " + subinput)
 
 
 class SlowLoris(HackingTool):
