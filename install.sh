@@ -30,8 +30,8 @@ echo "| |_| | / _ \| |   | ' / | ||  \| | |  _     | || | | | | | | |    ";
 echo "|  _  |/ ___ \ |___| . \ | || |\  | |_| |    | || |_| | |_| | |___ ";
 echo "|_| |_/_/   \_\____|_|\_\___|_| \_|\____|    |_| \___/ \___/|_____|";
 echo -e "${WHITE}----------------------------------------------------------------------"
-echo -e "${BLUE}     https://github.com/M0ULui/afoht ${NC}"
-echo -e "${RED}      [!] This Tool Must Run As ROOT [!]${NC}\n"
+echo -e "${BLUE}     [+] https://github.com/M0ULui/afoht [+] ${NC}"
+echo -e "${RED}       [!] This Tool Must Run As ROOT [!]${NC}\n"
 echo -e "${WHITE}----------------------------------------------------------------------"
 echo -e ${ORANGE}                "Available OS Options : \n"
 echo -e "${WHITE}              [1] Kali Linux"
