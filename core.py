@@ -161,7 +161,7 @@ class HackingToolsCollection(object):
         self.show_info()
         for index, tool in enumerate(self.TOOLS):
             print(f"[{index}] {tool.TITLE}")
-        print(f"[{99}] Back to {parent.TITLE if parent is not None else 'Exit'}")
+        print(f"[{99}] Back to {parent.TITLE if parent is not None else 'CLI / EXIT'}")
         tool_index = input("Choose a tool to proceed: ")
         try:
             tool_index = int(tool_index)
