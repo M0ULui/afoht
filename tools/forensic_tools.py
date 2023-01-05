@@ -29,7 +29,7 @@ class Wireshark(HackingTool):
 
 
 class ForensicTools(HackingToolsCollection):
-    TITLE = "Forensic tools"
+    TITLE = "Forensic Tools"
     TOOLS = [
         Autopsy(),
         Wireshark()

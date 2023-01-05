@@ -60,7 +60,7 @@ class Dex2jar(HackingTool):
 
 
 class ReverseEngineeringTools(HackingToolsCollection):
-    TITLE = "Reverse engineering tools"
+    TITLE = "Reverse Engineering Tools"
     TOOLS = [
         Apktool(),
         JDGui(),

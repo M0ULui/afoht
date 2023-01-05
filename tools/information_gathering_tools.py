@@ -58,7 +58,7 @@ class PortScan(HackingTool):
 
 
 class InformationGatheringTools(HackingToolsCollection):
-    TITLE = "Information gathering tools"
+    TITLE = "Information Gathering Tools"
     TOOLS = [
         Nmap(),
         DNSRecon(),

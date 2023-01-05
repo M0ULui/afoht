@@ -79,7 +79,7 @@ class Dirbuster(HackingTool):
 
 
 class WebAttackTools(HackingToolsCollection):
-    TITLE = "Web Attack tools"
+    TITLE = "Web Attack Tools"
     DESCRIPTION = ""
     TOOLS = [
         Sublist3r(),
