@@ -20,7 +20,7 @@ class MHDDoS(HackingTool):
 
     def run(self):
         os.system ("echo '\033[1;32m---------------------------------------\033[m';")
-        os.system(["cd /home/afoht/MHDDoS; python3 start.py HELP"])
+        os.system("cd MHDDoS && python3 start.py HELP")
         subinput = input("\033[33;5m MHDDoS => \033[0m")
         os.system(subinput)
 
@@ -34,7 +34,7 @@ class SlowLoris(HackingTool):
 
     def run(self):
         os.system ("echo '\033[1;32m---------------------------------------\033[m';")
-        target_site = input("Enter Target Site:- ")
+        target_site = input("Enter Target Site >> ")
         subprocess.run(["slowloris", target_site])
 
 
