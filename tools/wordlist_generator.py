@@ -45,7 +45,7 @@ class WlCreator(HackingTool):
 
 
 class WordlistGeneratorTools(HackingToolsCollection):
-    TITLE = "Wordlist Generator"
+    TITLE = "Wordlist Generator Tools"
     TOOLS = [
         Cupp(),
         WlCreator(),

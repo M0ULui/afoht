@@ -6,7 +6,7 @@ from core import HackingToolsCollection
 
 
 class Sqlmap(HackingTool):
-    TITLE = "Sqlmap tool"
+    TITLE = "sqlmap tool"
     DESCRIPTION = "sqlmap is an open source penetration testing tool that " \
                   "automates the process of \n" \
                   "detecting and exploiting SQL injection flaws and taking " \

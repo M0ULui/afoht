@@ -32,7 +32,7 @@ class TheFatRat(HackingTool):
 
 
 class VeilFramework(HackingTool):
-    TITLE = "VeilFramework"
+    TITLE = "Veil Framework"
     DESCRIPTION = "Veil is a tool designed to generate metasploit payloads\n" \
                   "that bypass common anti-virus solutions.\n"
     INSTALLED_SIZE = "767 MB"
