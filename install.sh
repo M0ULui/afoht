@@ -36,7 +36,8 @@ echo -e "${WHITE}---------------------------------------------------------------
 echo -e ${ORANGE}                "Available OS Options : \n"
 echo -e "${WHITE}              [1] Kali Linux"
 echo -e "${WHITE}              [0] Exit "
-echo -n -e "${YELLOW}AFOHT >> "
+echo -e "${WHITE}----------------------------------------------------------------------"
+echo -n -e "${YELLOW} AFOHT >> "
 read choice
 INSTALL_DIR="/usr/share/doc/afoht"
 BIN_DIR="/usr/bin/"
