@@ -32,7 +32,7 @@ class SocialFish(HackingTool):
 
 class HiddenEye(HackingTool):
     TITLE = "HiddenEye"
-    DESCRIPTION = "Modern Phishing Tool With Advanced Functionality And " \
+    DESCRIPTION = "HiddenEye is a Modern Phishing Tool With Advanced Functionality And " \
                   "Multiple Tunnelling Services \n" \
                   "\t [!]https://github.com/Morsmalleo/HiddenEye"
     INSTALLED_SIZE = "45.48 MB"
@@ -46,7 +46,7 @@ class HiddenEye(HackingTool):
 
 class ShellPhish(HackingTool):
     TITLE = "ShellPhish"
-    DESCRIPTION = "Fhishing Tool for 18 social media"
+    DESCRIPTION = "Phishing Tool for 18 Social Media sites"
     INSTALLED_SIZE = "12.44 MB"
     INSTALL_COMMANDS = ["git clone https://github.com/An0nUD4Y/shellphish.git"]
     RUN_COMMANDS = ["cd shellphish;sudo bash shellphish.sh"]
