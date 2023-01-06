@@ -14,6 +14,8 @@ class Autopsy(HackingTool):
     INSTALLED_SIZE = "1 MB"
     INSTALL_COMMANDS = ["sudo apt install autopsy"]
     RUN_COMMANDS = ["sudo autopsy"]
+    PROJECT_URL = "https://www.kali.org/tools/autopsy/"
+
 
 
 
@@ -25,6 +27,7 @@ class Wireshark(HackingTool):
     INSTALLED_SIZE = "200 MB"
     INSTALL_COMMANDS = ["sudo apt install wireshark"]
     RUN_COMMANDS = ["sudo wireshark"]
+    PROJECT_URL = "https://www.kali.org/tools/wireshark/"
 
 
 
