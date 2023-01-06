@@ -8,7 +8,7 @@ from core import HackingToolsCollection
 
 class Sublist3r(HackingTool):
     TITLE = "Sublist3r - SubDomain Finder"
-    DESCRIPTION = "Sublist3r is a python tool designed to enumerate " \
+    DESCRIPTION = "Sublist3r is a python tool designed to enumerate\n" \
                   "subdomains of websites using OSINT \n " \
                   "Usage:\n\t" \
                   "[1] python3 sublist3r.py -d example.com \n" \
@@ -30,7 +30,7 @@ class Sublist3r(HackingTool):
 
 class CheckURL(HackingTool):
     TITLE = "CheckURL"
-    DESCRIPTION = "Detect evil urls that uses IDN Homograph Attack.\n\t" \
+    DESCRIPTION = "CheckURL Detect evil urls that uses IDN Homograph Attack.\n\t" \
                   "[!] python3 checkURL.py --url google.com"
     INSTALLED_SIZE = "N/A"
     INSTALL_COMMANDS = [
@@ -46,10 +46,10 @@ class CheckURL(HackingTool):
 
 class Dirb(HackingTool):
     TITLE = "Dirb"
-    DESCRIPTION = "DIRB is a Web Content Scanner. It looks for existing " \
+    DESCRIPTION = "DIRB is a Web Content Scanner. It looks for existing \n" \
                   "(and/or hidden) Web Objects.\n" \
-                  "It basically works by launching a dictionary based " \
-                  "attack against \n a web server and analyzing the response."
+                  "It basically works by launching a dictionary based\n" \
+                  "attack against a web server and analyzing the response."
     INSTALLED_SIZE = "1.43 MB"
     INSTALL_COMMANDS = [
         "sudo git clone https://gitlab.com/kalilinux/packages/dirb.git",
@@ -66,10 +66,9 @@ class Dirb(HackingTool):
 
 class Dirbuster(HackingTool):
     TITLE = "Dirbuster"
-    DESCRIPTION = "DirBuster is a multi threaded java application designed" \
+    DESCRIPTION = "DirBuster is a multi threaded java application designed \n" \
                   "to brute force directories and files names \n" \
-                  "on web/application servers. " \
-                  "attack against \n a web server and analizing the response."
+                  "on web/application servers. "
     INSTALLED_SIZE = "10.75 MB"
     INSTALL_COMMANDS = [
         "sudo apt install dirbuster",

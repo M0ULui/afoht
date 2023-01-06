@@ -28,7 +28,7 @@ class MHDDoS(HackingTool):
 class SlowLoris(HackingTool):
     TITLE = "SlowLoris"
     DESCRIPTION = "Slowloris is basically an HTTP Denial of Service attack." \
-                  "It floods targeted sites with HTTP Requests"
+                  "\n It floods targeted sites with HTTP Requests"
     INSTALLED_SIZE = "36 KB"
     INSTALL_COMMANDS = ["sudo pip3 install slowloris"]
 
@@ -40,13 +40,13 @@ class SlowLoris(HackingTool):
 
 class Asyncrone(HackingTool):
     TITLE = "Asyncrone | Multifunction SYN Flood DDoS Weapon"
-    DESCRIPTION = "aSYNcrone is a C language based, mulltifunction SYN Flood " \
-                  "DDoS Weapon.\nDisable the destination system by sending a " \
+    DESCRIPTION = "aSYNcrone is a C language based, mulltifunction SYN Flood \n" \
+                  "DDoS Weapon.\nDisable the destination system by sending a \n" \
                   "SYN packet intensively to the destination."
     INSTALLED_SIZE = "N/A"
     INSTALL_COMMANDS = [
         "git clone https://github.com/fatihsnsy/aSYNcrone.git",
-        "cd aSYNcrone;sudo gcc aSYNcrone.c -o aSYNcrone -lpthread"
+        "cd aSYNcrone;sudo gcc aSYNcrone.c -o aSYNcrone -lpthread -2"
     ]
     PROJECT_URL = "https://github.com/fatihsnsy/aSYNcrone"
 
